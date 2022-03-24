@@ -1,6 +1,8 @@
 import React from 'react'
 import Stories from './Stories'
 import Posts from './Posts'
+import MiniProfile from './MiniProfile'
+import Suggestions from './Suggestions'
 
 function Feed() {
   return (
@@ -11,9 +13,11 @@ function Feed() {
       </section>
 
       {/* {Sectoion} */}
-      <section>
-        {/* {Mini profile} */}
-        {/* {Suggestions} */}
+      <section className="hidden md:col-span-1 xl:inline-grid">
+        <div className="fixed top-20">
+          <MiniProfile />
+          <Suggestions />
+        </div>
       </section>
     </main>
   )
